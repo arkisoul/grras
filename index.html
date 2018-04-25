@@ -12,8 +12,12 @@
         <!-- Place favicon.ico in the root directory -->
         <title>Home | GRRAS </title>
         <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="js/vendor/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="js/vendor/assets/owl.theme.default.min.css" />
         <link rel="stylesheet" href="css/font-awesome.min.css" />
-        <link rel="stylesheet" href="css/animate.css" />
+        <link rel="stylesheet" href="css/aos.css" />
+        <link rel="stylesheet" href="css/ihover.min.css" />
+        <link rel="stylesheet" href="css/swiper.min.css" />
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css" />
    </head>
@@ -63,10 +67,14 @@
                        <li><a href="#">Placements</a></li>
                        <li><a href="#">Contact Us</a></li>
                        <li>
-                            <form action="" method="" id="nav_search">
-                                <input type="search" class="form-control" placeholder="Search">
-                            </form>
-                            <a href="" class="nav-search"><img src="img/_home_page/search.png" width="20" /></a>
+                          <div id="search" class="dropdown pull-right">
+                            <a class="dropdown-toggle" data-toggle="dropdown"><i class="lnr lnr-magnifier"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <button type="button" class="btn btn-default hidden"><i class="lnr lnr-magnifier"></i></button>
+                              <input type="text" name="search" value="" placeholder="Search" class="form-control input-lg">
+                            </div>
+                            <a class="dropdown-toggle" data-toggle="dropdown"><img src="img/_home_page/search.png" width="20" /></a>
+                          </div>
                         </li>
                     </div>
                   </nav>
@@ -142,27 +150,27 @@
          <div class="container-fluid">
             <div class="program-block">
                <!--first program row-->
-               <div class="program_box">
+               <div class="program_box" data-aos="fade-up">
                  <div class="img_thumb">
                     <img src="img/_home_page/course_1.png" class="img-responsive" />
-                    <div class="img-title">Internship Training<br /> Programme</div>
+                    <!-- <div class="img-title">Internship Training<br /> Programme</div> -->
                 </div>
                  <div class="pro_content">
                     <p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even  </p>
                  </div>
                  <div class="pro_footer"><i class="fa fa-long-arrow-right fa-2x"></i></div>
                </div>
-               <div class="program_box custom-ml">
+               <div class="program_box custom-ml" data-aos="fade-up">
                  <div class="img_thumb">
                     <img src="img/_home_page/course_2.png" class="img-responsive" />
-                    <div class="img-title">Modular Training<br /> Programme</div>
+                    <!-- <div class="img-title">Modular Training<br /> Programme</div> -->
                 </div>
                  <div class="pro_content">
                     <p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even  </p>
                  </div>
                  <div class="pro_footer"><i class="fa fa-long-arrow-right fa-2x"></i></div>
                </div>
-               <div class="program_box less_border_box">
+               <div class="program_box less_border_box" data-aos="fade-up">
                   <div class="">
                      <h2 class="text-uppercase">explore<br> the<br> best</h2>
                   </div>
@@ -171,25 +179,25 @@
             <!--first program row close-->
             <div class="program-block">
                <!--second program row-->
-               <div class="col-md-4 program_box less_border_box">
+               <div class="col-md-4 program_box less_border_box" data-aos="fade-up">
                   <div class="text-left">
                      <h2 class="text-uppercase">career<br> Oriented<br> Courses </h2>
                   </div>
                </div>
-               <div class="program_box">
+               <div class="program_box" data-aos="fade-up">
                  <div class="img_thumb">
                     <img src="img/_home_page/course_2.png" class="img-responsive" />
-                    <div class="img-title">Job Oriented<br /> Programme</div>
+                    <!-- <div class="img-title">Job Oriented<br /> Programme</div> -->
                 </div>
                  <div class="pro_content">
                     <p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even  </p>
                  </div>
                  <div class="pro_footer"><i class="fa fa-long-arrow-right fa-2x"></i></div>
                </div>
-               <div class="program_box custom-ml">
+               <div class="program_box custom-ml" data-aos="fade-up">
                  <div class="img_thumb">
                     <img src="img/_home_page/course_1.png" class="img-responsive" />
-                    <div class="img-title">Corporate Ready<br /> Programme</div>
+                    <!-- <div class="img-title">Corporate Ready<br /> Programme</div> -->
                  </div>
                  <div class="pro_content">
                     <p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even  </p>
@@ -329,36 +337,50 @@
                 </div>
                <div class="col-lg-12">
                   <div class="row">
-                     <div class="col-lg-2 col-sm-4 col-xs-6">
-                        <div class="company_thumbs">
-                           <img src="img/_home_page/courselogo_01.png" class="img-responsive">
-                        </div>
-                     </div>
-                     <div class="col-lg-2 col-sm-4 col-xs-6">
-                        <div class="company_thumbs">
-                           <img src="img/_home_page/courselogo_02.png" class="img-responsive">
-                        </div>
-                     </div>
-                     <div class="col-lg-2 col-sm-4 col-xs-6">
-                        <div class="company_thumbs">
-                           <img src="img/_home_page/courselogo_03.png" class="img-responsive">
-                        </div>
-                     </div>
-                     <div class="col-lg-2 col-sm-4 col-xs-6">
-                        <div class="company_thumbs">
-                           <img src="img/_home_page/courselogo_04.png" class="img-responsive">
-                        </div>
-                     </div>
-                     <div class="col-lg-2 col-sm-4 col-xs-6">
-                        <div class="company_thumbs">
-                           <img src="img/_home_page/courselogo_05.png" class="img-responsive">
-                        </div>
-                     </div>
-                     <div class="col-lg-2 col-sm-4 col-xs-6">
-                        <div class="company_thumbs">
-                           <img src="img/_home_page/courselogo_06.png" class="img-responsive">
-                        </div>
-                     </div>
+                    <div class="courses-container owl-carousel owl-theme">
+                      <div class="company_thumbs ih-item square effect6 from_top_and_bottom">
+                        <a href="#">
+                          <div class="img"><img src="img/_home_page/courselogo_01.png" class="img-responsive" alt="img"></div>
+                          <div class="info">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="company_thumbs ih-item square effect6 from_top_and_bottom">
+                        <a href="#">
+                          <div class="img"><img src="img/_home_page/courselogo_02.png" class="img-responsive" alt="img"></div>
+                          <div class="info">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="company_thumbs ih-item square effect6 from_top_and_bottom">
+                        <a href="#">
+                          <div class="img"><img src="img/_home_page/courselogo_03.png" class="img-responsive" alt="img"></div>
+                          <div class="info">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="company_thumbs ih-item square effect6 from_top_and_bottom">
+                        <a href="#">
+                          <div class="img"><img src="img/_home_page/courselogo_04.png" class="img-responsive" alt="img"></div>
+                          <div class="info">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="company_thumbs ih-item square effect6 from_top_and_bottom">
+                        <a href="#">
+                          <div class="img"><img src="img/_home_page/courselogo_05.png" class="img-responsive" alt="img"></div>
+                          <div class="info">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="company_thumbs ih-item square effect6 from_top_and_bottom">
+                        <a href="#">
+                          <div class="img"><img src="img/_home_page/courselogo_06.png" class="img-responsive" alt="img"></div>
+                          <div class="info">
+                          </div>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                </div>
             </div>
@@ -378,62 +400,62 @@
                 <div class="col-lg-12 mt-3">
                   <div class="row">
                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="company_thumbs">
+                        <div class="company_thumbs float-shadow">
                            <img src="img/_home_page/logo_dummy_-1.png" class="img-responsive">
                         </div>
                      </div>
                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="company_thumbs">
+                        <div class="company_thumbs float-shadow">
                            <img src="img/_home_page/logo_dummy_-2.png" class="img-responsive">
                         </div>
                      </div>
                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="company_thumbs">
+                        <div class="company_thumbs float-shadow">
                            <img src="img/_home_page/logo_dummy_-3.png" class="img-responsive">
                         </div>
                      </div>
                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="company_thumbs">
+                        <div class="company_thumbs float-shadow">
                            <img src="img/_home_page/logo_dummy_-4.png" class="img-responsive">
                         </div>
                      </div>
                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="company_thumbs">
+                        <div class="company_thumbs float-shadow">
                            <img src="img/_home_page/logo_dummy_-5.png" class="img-responsive">
                         </div>
                      </div>
                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="company_thumbs">
+                        <div class="company_thumbs float-shadow">
                            <img src="img/_home_page/logo_dummy_-6.png" class="img-responsive">
                         </div>
                      </div>
                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="company_thumbs">
+                        <div class="company_thumbs float-shadow">
                            <img src="img/_home_page/logo_dummy_-7.png" class="img-responsive">
                         </div>
                      </div>
                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="company_thumbs">
+                        <div class="company_thumbs float-shadow">
                            <img src="img/_home_page/logo_dummy_-8.png" class="img-responsive">
                         </div>
                      </div>
                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="company_thumbs">
+                        <div class="company_thumbs float-shadow">
                            <img src="img/_home_page/logo_dummy_-9.png" class="img-responsive">
                         </div>
                      </div>
                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="company_thumbs">
+                        <div class="company_thumbs float-shadow">
                            <img src="img/_home_page/logo_dummy_-10.png" class="img-responsive">
                         </div>
                      </div>
                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="company_thumbs">
+                        <div class="company_thumbs float-shadow">
                            <img src="img/_home_page/logo_dummy_-11.png" class="img-responsive">
                         </div>
                      </div>
                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="company_thumbs">
+                        <div class="company_thumbs float-shadow">
                            <img src="img/_home_page/logo_dummy_-1.png" class="img-responsive">
                         </div>
                      </div>
@@ -471,21 +493,44 @@
                     <p class="media-content">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi deleniti sapiente autem officiis eos sequi odit,Excepturi deleniti sapiente Excepturi deleniti sapiente"</p>
                     <button type="button" class="btn">Read More</button>
                 </div>
-                <div class="our-story-gallery clearfix">
-                    <img src="img/_home_page/p01.png" class="img-responsive our-story-gallery-img" />
-                    <img src="img/_home_page/p02.png" class="img-responsive our-story-gallery-img" />
-                    <img src="img/_home_page/p03.png" class="img-responsive our-story-gallery-img" />
-                    <img src="img/_home_page/p04.png" class="img-responsive our-story-gallery-img" />
-                    <img src="img/_home_page/p05.png" class="img-responsive our-story-gallery-img" />
-                    <div class="gallery-navs">
-                        &lt; Previous Next &gt;
-                        <ul class="list-inline">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
+                <!-- Swiper -->
+                <div class="swiper-container our-story-gallery">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="#" class="our-story-gallery-img"><img src="img/_home_page/p01.png" class="img-responsive" /></a>
                     </div>
+                    <div class="swiper-slide">
+                      <a href="#" class="our-story-gallery-img"><img src="img/_home_page/p02.png" class="img-responsive" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#" class="our-story-gallery-img"><img src="img/_home_page/p03.png" class="img-responsive" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#" class="our-story-gallery-img"><img src="img/_home_page/p04.png" class="img-responsive" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#" class="our-story-gallery-img"><img src="img/_home_page/p05.png" class="img-responsive" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#" class="our-story-gallery-img"><img src="img/_home_page/p01.png" class="img-responsive" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#" class="our-story-gallery-img"><img src="img/_home_page/p02.png" class="img-responsive" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#" class="our-story-gallery-img"><img src="img/_home_page/p03.png" class="img-responsive" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#" class="our-story-gallery-img"><img src="img/_home_page/p04.png" class="img-responsive" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#" class="our-story-gallery-img"><img src="img/_home_page/p05.png" class="img-responsive" /></a>
+                    </div>
+                  </div>
+                  <!-- Add Pagination -->
+                  <div class="swiper-pagination"></div>
                 </div>
+                <!-- Swiper End -->
             </div>
          </div>
       </section>
@@ -595,6 +640,9 @@
       <script src="js/vendor/jquery-3.2.1.min.js"> </script>
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
       <script src="js/vendor/bootstrap.min.js"></script>
+      <script src="js/vendor/owl.carousel.min.js"></script>
+      <script src="js/vendor/aos.js"></script>
+      <script src="js/vendor/swiper.min.js"></script>
       <script src="js/plugins.js"></script>
       <script src="js/main.js"></script>
       <script src="js/vendor/wow.min.js"></script>
