@@ -154,6 +154,7 @@ textarea {
        padding: 0px;
        position: absolute;
        z-index: 11;
+       top: 0;
    }
 
    .menu_bar .navbar {
@@ -201,25 +202,25 @@ textarea {
    }
 
    #home_slider .carousel-inner .item:first-child {
-        background: url('../img/_banners/banner01.png') no-repeat center center scroll;
+        background: url('../img/_banners/banner01.jpg') no-repeat center center scroll;
         background-size: cover;
         height: 600px;
    }
 
    #home_slider .carousel-inner .item:nth-child(2) {
-        background: url('../img/_banners/banner02.png') no-repeat center center scroll;
+        background: url('../img/_banners/banner02.jpg') no-repeat center center scroll;
         background-size: cover;
         height: 600px;
    }
 
    #home_slider .carousel-inner .item:nth-child(3) {
-        background: url('../img/_banners/banner03.png') no-repeat center center scroll;
+        background: url('../img/_banners/banner03.jpg') no-repeat center center scroll;
         background-size: cover;
         height: 600px;
    }
 
    #home_slider .carousel-inner .item:last-child {
-        background: url('../img/_banners/banner04.png') no-repeat center center scroll;
+        background: url('../img/_banners/banner04.jpg') no-repeat center center scroll;
         background-size: cover;
         height: 600px;
    }
@@ -968,9 +969,203 @@ textarea {
   opacity: 1;
 }
 
+/* Course Detail Page */
+.module-heading {
+  font-size: 22px;
+  font-weight: 900;
+}
+.course-detail-header {
+  background: url('../img/_inner_page/inner_banner.png') no-repeat center center scroll;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: -1;
+}
+/* Course Detail: Header end */
+
+/* Advantage Module */
+#course-advantage {
+  margin-top: -3rem;
+}
+.advantage-block {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1.5rem 1rem;
+  box-shadow: -1px 2px 8px 0 #cecece;
+  margin-bottom: 4rem;
+}
+.advantage-block > h1 {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+.advantage-content > p {
+  margin-bottom: 0.3rem;
+  font-size: 15px;
+}
+.advantage-content > div {
+  font-size: 13px;
+}
+.col-box + .col-box {
+  border-left: 2px solid #cecece;
+}
+.advantage-bottom-block {
+  margin-bottom: 4rem;
+}
+.brochure-btn > .btn {
+  display: inline-flex;
+  align-items: flex-end;
+  width: 100%;
+  border-radius: 8px;
+  height: 150px;
+  text-align: left;
+  padding: 1rem;
+}
+.brochure-btn > .btn:hover, .brochure-btn > .btn:focus {
+  color: #fff;
+  z-index: 11;
+  box-shadow: -1px 1px 8px 0 #222;
+}
+.advantage-bottom-content {
+  margin-left: 2rem;
+}
+.advantage-bottom-content > h1 {
+  font-weight: 900;
+  font-size: 22px;
+}
+.partners-block {
+  padding: 1.4rem 0;
+  border-top: 1px solid #cecece;
+  border-bottom: 1px solid #cecece;
+}
+/* End Advantage Module */
+
+/* Course Detail: About Module */
+#aboutus {
+  padding: 4rem 0;
+  background-color: #fff;
+}
+.about-blue-block {
+  height: 280px;
+  width: 300px;
+  margin: auto;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #cecece;
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+.about-blue-block::after {
+  content: '';
+  height: 280px;
+  width: 300px;
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(7, 69, 177);
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+}
+.about-blue-block > .btn {
+  z-index: 1;
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 1;
+  color: #fff;
+  font-size: 1.4rem;
+}
+.about-btn > .btn {
+  padding: 10px 30px;
+  font-weight: 300;
+  margin-top: 3rem;
+}
+/* End of Course Detail: About Module */
+
+/* Course Detail: Course Overview */
+#course-overview {
+  padding: 3rem 0;
+}
+#course-overview-inner {
+  padding: 3rem 0;
+  background-color: rgb(247, 247, 247);
+}
+.course-overview-block {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.course-overview-tabs-container {
+  width: 30%;
+  padding: 1.4rem 0;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.course-overview-content-container {
+  background-color: #fff;
+  width: 70%;
+  padding: 1.4rem;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+#course-overview-tabs.nav-pills>li>a {
+  transition: all ease 0.2s;
+  color: #fff;
+  font-weight: 400;
+  border-radius: 0;
+  padding: 0.7rem 1rem;
+}
+#course-overview-tabs.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover, #course-overview-tabs.nav-pills>li>a:hover, #course-overview-tabs.nav-pills>li>a:focus {
+  background-color: rgb(3, 53, 135);
+}
+#course-overview-tabs.nav-stacked>li+li {
+  margin-top: 0px;
+}
+.tab-content-heading {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+/* End of Course Detail: Course Overview */
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+  .bg-v { background-color: rgb(7, 69, 177); }
+  .bg-p { background-color: rgb(255, 45, 114); }
+  .text-white { color: #fff; }
+  .mt-0 { margin-top: 0; }
+  .mt-1 { margin-top: 0.5rem; }
+  .mb-0 { margin-bottom: 0; }
+  .mb-1 { margin-bottom: 0.5rem; }
+  .mb-2 { margin-bottom: 1rem; }
+  .mb-3 { margin-bottom: 2rem; }
+  .mb-4 { margin-bottom: 3rem; }
+  .pl-0 { padding-left: 0; }
+  .pr-0 { padding-right: 0; }
 
 /*
  * Hide visually and from screen readers

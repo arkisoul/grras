@@ -1,4 +1,4 @@
-$('.owl-carousel').owlCarousel({
+$('#coursesContainer').owlCarousel({
     loop:true,
     dots:true,
     nav:true,
@@ -20,6 +20,124 @@ $('.owl-carousel').owlCarousel({
         },
         1200:{
             items:6
+        }
+    }
+});
+
+$('#partners-container').owlCarousel({
+    loop:true,
+    dots:true,
+    nav:true,
+    autoplay:false,
+    margin: 10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        580:{
+            items:2
+        },
+        768:{
+            items:3
+        },
+        992:{
+            items:4
+        },
+        1200:{
+            items:6
+        }
+    }
+});
+
+$('#alumni-speaks-container').owlCarousel({
+    loop:true,
+    dots:true,
+    nav:true,
+    autoplay:false,
+    margin: 15,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:1
+        },
+        992:{
+            items:2
+        },
+        1200:{
+            items:3
+        }
+    }
+});
+
+$('#related-courses-container').owlCarousel({
+    loop:true,
+    dots:true,
+    nav:true,
+    autoplay:false,
+    margin: 30,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:2
+        },
+        992:{
+            items:2
+        },
+        1200:{
+            items:4
+        }
+    }
+});
+
+$('#video-testimonial-container').owlCarousel({
+    loop:true,
+    dots:true,
+    nav:true,
+    autoplay:false,
+    margin: 15,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:2
+        },
+        992:{
+            items:2
+        },
+        1200:{
+            items:4
+        }
+    }
+});
+
+$('#our-trainers-container').owlCarousel({
+    loop:true,
+    dots:true,
+    nav:true,
+    autoplay:false,
+    margin: 15,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:2
+        },
+        992:{
+            items:2
+        },
+        1200:{
+            items:4
         }
     }
 });
