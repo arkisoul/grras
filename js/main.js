@@ -55,14 +55,14 @@ $('#alumni-speaks-container').owlCarousel({
     dots:true,
     nav:true,
     autoplay:false,
-    margin: 15,
+    margin: 5,
     responsiveClass:true,
     responsive:{
         0:{
             items:1
         },
         768:{
-            items:1
+            items:2
         },
         992:{
             items:2

@@ -1039,6 +1039,9 @@ textarea {
   border-top: 1px solid #cecece;
   border-bottom: 1px solid #cecece;
 }
+.partners-block .company_thumbs {
+  margin: 4px;
+}
 /* End Advantage Module */
 
 /* Course Detail: About Module */
@@ -1061,6 +1064,7 @@ textarea {
   -ms-transform: rotate(20deg);
   -o-transform: rotate(20deg);
   transform: rotate(20deg);
+  transition: all ease 0.4s;
 }
 .about-blue-block::after {
   content: '';
@@ -1078,6 +1082,7 @@ textarea {
   -ms-transform: rotate(-20deg);
   -o-transform: rotate(-20deg);
   transform: rotate(-20deg);
+  transition: all ease 0.4s;
 }
 .about-blue-block > .btn {
   z-index: 1;
@@ -1095,6 +1100,28 @@ textarea {
   color: #fff;
   font-size: 1.4rem;
 }
+.about-blue-block:hover, .about-blue-block:focus {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+  cursor: pointer;
+}
+.about-blue-block:hover::after, .about-blue-block:focus::after {
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+.about-blue-block:hover > .btn, .about-blue-block:focus > .btn {
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
 .about-btn > .btn {
   padding: 10px 30px;
   font-weight: 300;
@@ -1104,7 +1131,8 @@ textarea {
 
 /* Course Detail: Course Overview */
 #course-overview {
-  padding: 3rem 0;
+  padding: 3rem 0 0;
+  background-color: #fff;
 }
 #course-overview-inner {
   padding: 3rem 0;
@@ -1149,6 +1177,274 @@ textarea {
   margin-bottom: 1rem;
 }
 /* End of Course Detail: Course Overview */
+
+/* Course Detail: Alumni Speaks */
+#alumni-speaks {
+  background-color: #fff;
+  padding: 3rem 0 3rem;
+}
+.alumni-card {
+  background-color: #fff;
+  padding: 0.8rem 1rem;
+  margin: 0.5rem;
+  /* border-radius */
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+  /* box-shadow */
+   -webkit-box-shadow: rgba(200, 200, 200, 0.8) 0 0 10px;
+   -moz-box-shadow: rgba(200, 200, 200, 0.8) 0 0 10px;
+   box-shadow: rgba(200, 200, 200, 0.8) 0 0 10px;
+   border: 1px solid #eee;
+   transition: all ease 0.4s;
+}
+.alumni-card:hover, .alumni-card:focus {
+  -webkit-box-shadow: rgba(128, 128, 128, 0.8) -7px -7px 10px;
+  -moz-box-shadow: rgba(128, 128, 128, 0.8) -7px -7px 10px;
+  box-shadow: rgba(128, 128, 128, 0.8) -7px -7px 10px;
+}
+.alumni-avatar {
+  width: 100px;
+  height: 100px;
+}
+.alumni-name {
+  font-size: 18px;
+}
+/* End of Course Detail: Alumni Speaks */
+
+/* Course Detail: Related Courses */
+#related-courses {
+  padding: 3rem 0;
+  background-color: rgb(247, 247, 247);
+}
+.related-course-box {
+  margin: 3px;
+}
+.related-course-img > img {
+  border-radius: 8px;
+}
+.related-course-body > h5 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.related-course-link > .btn {
+  border-radius: 0;
+  transition: all ease 0.4s;
+  font-weight: 300;
+  font-size: 12px;
+  padding: 0.6rem 1rem;
+}
+.related-course-link > .btn > i.fa {
+  margin-left: 0.6rem;
+}
+.related-course-link > .btn:hover, .related-course-link > .btn:focus {
+  color: #fff;
+  background-color: rgb(3, 53, 135);
+  box-shadow: 2px 2px 8px 0 rgb(3, 53, 135);
+}
+/* End Course Detail: Related Courses */
+
+/* Course Detail: Video Testimonial */
+#video-testimonial {
+  padding: 3rem 0 4rem;
+  background-color: #fff;
+}
+.video-testimonial-box {
+  margin: 4px;
+}
+.video-testimonial-img {
+  position: relative;
+}
+.video-testimonial-img > img {
+  border-radius: 8px;
+  position: relative;
+}
+.video-time {
+  position: absolute;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 300;
+  bottom: 5px;
+  left: 20px;
+}
+.video-testimonial-img > .btn {
+  background-color: rgb(255, 45, 114);
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0;
+  line-height: 1;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 10px;
+  bottom: -20px;
+  border-radius: 50%;
+}
+.video-testimonial-title > h5 {
+  font-size: 14px;
+  font-weight: 600;
+}
+/* End of Course Detail: Video Testimonial */
+
+/* Course Detail: Job Oriented */
+#job-oriented {
+  padding: 4rem 0 3rem;
+  background-color: #fff;
+}
+.blue-block-img {
+  z-index: 1;
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+  width: 200px;
+  margin-top: -86px;
+  margin-left: -40px;
+}
+/* End of Course Detail: Job Oriented */
+
+/* Course Detail: Our Trainers */
+#our-trainers {
+  background-color: #fff;
+  padding: 3rem 0;
+}
+.our-trainer-box {
+  transition: all ease 0.4s;
+}
+.our-trainer-box:hover, .our-trainer-box:focus {
+  margin: 3px;
+  -webkit-box-shadow: rgba(128, 128, 128, 0.8) 7px 7px 10px;
+  -moz-box-shadow: rgba(128, 128, 128, 0.8) 7px 7px 10px;
+  box-shadow: rgba(128, 128, 128, 0.8) 7px 7px 10px;
+  border: 1px solid #cecece;
+  border-radius: 8px;
+  padding: 1rem;
+}
+.our-trainer-body {
+  padding: 0.5rem;
+}
+.our-trainer-name {
+  font-weight: 600;
+  font-size: 14px;
+}
+.our-trainer-des {
+  font-weight: 300;
+  font-size: 12px;
+}
+/* End of Course Detail: Our Trainers */
+
+/* Course Detail: Candidate Review */
+#candidate-review {
+  background-color: #fff;
+  padding: 3rem 0;
+}
+.candidate-review-block {
+  border-top: 2px solid #dbdbdb;
+}
+.review-summary-block {
+  padding: 4rem 0 2rem;
+}
+.review-count {
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 0.7rem;
+}
+.review-stars .fa-star {
+  color: rgb(174, 174, 174);
+  font-size: 1.2rem;
+}
+.review-stars .fa-star.ratedStar {
+  color: rgb(255, 220, 50);
+}
+#reviewSearch .form-control {
+  border-radius: 0;
+  position: relative;
+}
+#reviewSearch .form-control::placeholder {
+  font-weight: 300;
+  font-size: 12px;
+  color: #bbb;
+}
+#reviewSearch .form-group {
+  margin-bottom: 0;
+}
+#reviewSearch .form-group::after {
+  content: '\f002';
+  font-family: FontAwesome;
+  font-size: 14px;
+  color: #bbb;
+  position: absolute;
+  right: 25px;
+  top: 11px;
+  width: 14px;
+  height: 14px;
+  line-height: 1;
+}
+.review-attributes-block {
+  padding-bottom: 3rem;
+}
+.review-attri-box {
+  margin-bottom: 0.5rem;
+}
+.review-attribute {
+  display: inline-block;
+  width: 40%;
+  font-weight: 300;
+  font-size: 13px;
+}
+.candidate-review-box {
+  padding: 3rem 0.5rem 2rem;
+  border-top: 1px solid #cecece;
+}
+.candidate-review-box .media-object {
+  width: 80px;
+  height: 80px;
+  margin-right: 0.6rem;
+}
+.candidate-review-box .media-heading {
+  margin-right: 0.4rem;
+}
+.candidate-review-date {
+  font-size: 13px;
+  font-weight: 300;
+}
+.candidate-review-feedback-box {
+  font-size: 11px;
+  font-weight: 300;
+}
+.candidate-review-feedback-box span + span {
+  margin-left: 1rem;
+}
+.candidate-review-feedback-box span > i.fa {
+  font-size: 16px;
+}
+.candidate-review-feedback-box .like-review > i.fa:hover, .candidate-review-feedback-box .like-review > i.fa:focus {
+  cursor: pointer;
+  color: green;
+}
+.candidate-review-feedback-box .unlike-review > i.fa:hover, .candidate-review-feedback-box .unlike-review > i.fa:focus,
+.candidate-review-feedback-box .report-review > i.fa:hover, .candidate-review-feedback-box .report-review > i.fa:focus {
+  cursor: pointer;
+  color: red;
+}
+/* End of Course Detail: Candidate Review */
+
+/* Course Detail: Book Seat */
+#book-seat {
+  padding: 2rem 0;
+  background-color: #fff;
+}
+.book-seat-block > .btn {
+  padding: 0.8rem 1.5rem;
+  font-weight: 300;
+  font-size: 12px;
+  border-radius: 0;
+}
+.book-seat-block > .btn:hover, .book-seat-block > .btn:focus {
+  color: #fff;
+}
+/* End of Course Detail: Book Seat */
 
 
 /* ==========================================================================
@@ -1298,9 +1594,17 @@ textarea {
     }
 }
 
+@media all and (max-width: 991px) {
+  .owl-carousel .owl-item .related-course-img img,
+  .owl-carousel .owl-item .our-trainer-avatar img { margin: auto; }
+  .owl-carousel .owl-item .video-testimonial-img img { width: 100%; }
+}
+
 @media all and (max-width: 991px) and (min-width: 768px) {
     .our_program .program_box.custom-ml { margin-left: 3rem; }
     .program_box h2 { font-size: 3.5rem; }
+    .about-blue-block, .about-blue-block::after { width: 240px; height: 220px }
+    .blue-block-img { width: 165px; }
 }
 
 @media all and (max-width: 767px) {
@@ -1370,6 +1674,37 @@ textarea {
         font-size: 2.5rem;
         line-height: 1.2;
     }
+    .col-box {
+      margin-bottom: 1rem;
+    }
+    .col-box:nth-child(odd) {
+      border-left: none;
+    }
+    .brochure-btn > .btn {
+      height: auto;
+      justify-content: flex-end;
+      margin-bottom: 1rem;
+    }
+    #aboutus .about-blocks {
+      margin-top: 4rem;
+    }
+    #job-oriented .about-blocks {
+      margin-bottom: 4rem;
+    }
+    #reviewSearch {
+      margin-top: 1rem;
+    }
+}
+
+@media all and (max-width: 480px) {
+  .about-blue-block, .about-blue-block::after { width: 200px; height: 180px }
+  .blue-block-img { width: 165px; }
+  .course-overview-block { flex-flow: column nowrap; }
+  .course-overview-tabs-container { width: 100%; border-bottom-left-radius: 0; border-top-right-radius: 8px; }
+  .course-overview-content-container { width: 100%; border-top-right-radius: 0px; border-bottom-left-radius: 8px;}
+  #course-overview-tabs { display: flex; flex-flow: row wrap; justify-content: flex-start; }
+  #course-overview-tabs.nav-stacked>li { width: 33%; }
+  .candidate-review-box .media-left { display: block; margin-bottom: 1rem; }
 }
 
 /* ==========================================================================
