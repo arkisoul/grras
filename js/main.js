@@ -175,3 +175,39 @@ var swiper = new Swiper('.swiper-container', {
       }
     }
 });
+
+$(function(){
+    $(".element-group .element").typed({
+        strings: ["Free Demo", "Career Guidance", "100% Placement Assistance", "15/30/45/60/180 Days Live Internship Program"],
+        // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+        stringsElement: null,
+        // typing speed
+        typeSpeed: 50,
+        // time before typing starts
+        startDelay: 200,
+        // backspacing speed
+        backSpeed: 40,
+        // time before backspacing
+        backDelay: 800,
+        // loop
+        loop: true,
+        // false = infinite
+        loopCount: false,
+        // show cursor
+        showCursor: false,
+        // character for cursor
+        cursorChar: "|",
+        // attribute to type (null == text)
+        attr: null,
+        // either html or text
+        contentType: 'html',
+        // call when done callback function
+        callback: function() {},
+        // starting callback function before each string
+        preStringTyped: function() {},
+        //callback for every typed string
+        onStringTyped: function() {},
+        // callback for reset
+        resetCallback: function() {}
+    });
+});

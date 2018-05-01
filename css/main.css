@@ -189,16 +189,27 @@ textarea {
         padding: 0;
    }
 
-   .my_navbar li a {
+   .my_navbar > li > a {
        color: #fff;
        font-size: 16px;
        transition: all ease-in-out 0.4s;
    }
 
-   .my_navbar li a:hover, .my_navbar li a:focus {
+   .my_navbar li a:hover, .my_navbar li a:focus, .my_navbar li a:active {
         background-color: #00a8ff;
         border-radius: 4px;
         color: #fff;
+   }
+
+   .my_navbar.nav .open>a, .my_navbar.nav .open>a:focus, .my_navbar.nav .open>a:hover {
+      background-color: #00a8ff;
+      border-radius: 4px;
+      color: #fff;
+   }
+
+   .grras-dropdown-menu {
+      max-height: 200px;
+      overflow-y: auto;
    }
 
    #home_slider .carousel-inner .item:first-child {
@@ -975,13 +986,12 @@ textarea {
   font-weight: 900;
 }
 .course-detail-header {
-  background: url('../img/_inner_page/inner_banner.png') no-repeat center center scroll;
+  background: url('../img/_inner_page/inner_banner.jpg') no-repeat center center scroll;
   background-size: cover;
   height: 600px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  z-index: -1;
 }
 /* Course Detail: Header end */
 
@@ -995,6 +1005,8 @@ textarea {
   padding: 1.5rem 1rem;
   box-shadow: -1px 2px 8px 0 #cecece;
   margin-bottom: 4rem;
+  position: relative;
+  z-index: 11;
 }
 .advantage-block > h1 {
   margin-bottom: 1.5rem;
@@ -1445,6 +1457,52 @@ textarea {
   color: #fff;
 }
 /* End of Course Detail: Book Seat */
+/* End of Course Detail Page */
+
+/* Contact Page */
+  /* Header Module */
+  .contact-header {
+    background: url('../img/_contact/contact_banner.jpg') no-repeat center center scroll;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .element-group .element {
+    font-size: 2.2rem;
+  }
+  .element-group .element::after {
+    content: '|';
+    display: inline;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+  }
+  .contact-header .sub-heading { font-size: 1.1rem; margin-top: 1.6rem; }
+  /*Removes cursor that comes with typed.js*/
+  .typed-cursor{
+     opacity: 0;
+    display: none;
+  }
+  /*Custom cursor animation*/
+  @keyframes blink{
+      0% { opacity:1; }
+      50% { opacity:0; }
+      100% { opacity:1; }
+  }
+  @-webkit-keyframes blink{
+      0% { opacity:1; }
+      50% { opacity:0; }
+      100% { opacity:1; }
+  }
+  @-moz-keyframes blink{
+      0% { opacity:1; }
+      50% { opacity:0; }
+      100% { opacity:1; }
+  }
+  /* End of Header Module */
+/* End of Contact Page */
 
 
 /* ==========================================================================
@@ -1453,6 +1511,7 @@ textarea {
   .bg-v { background-color: rgb(7, 69, 177); }
   .bg-p { background-color: rgb(255, 45, 114); }
   .text-white { color: #fff; }
+  .text-blue { color: #00c6ff; }
   .mt-0 { margin-top: 0; }
   .mt-1 { margin-top: 0.5rem; }
   .mb-0 { margin-bottom: 0; }
@@ -1462,6 +1521,27 @@ textarea {
   .mb-4 { margin-bottom: 3rem; }
   .pl-0 { padding-left: 0; }
   .pr-0 { padding-right: 0; }
+  span.req { color: red;}
+  select:required:invalid { color: gray; }
+  option[value=""][disabled] { display: none; }
+  option { color: black; }
+  .custom-select {
+      display: inline-block;
+      width: 100%;
+      height: calc(2.25rem + 2px);
+      padding: .375rem 1.75rem .375rem .75rem;
+      line-height: 1.5;
+      color: #495057;
+      vertical-align: middle;
+      background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
+      background-size: 8px 10px;
+      border: 1px solid #ced4da;
+      border-radius: .25rem;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+  }
+  .input-hint { font-size: 11px; color: red; margin-top: 0.4rem; }
 
 /*
  * Hide visually and from screen readers
