@@ -1796,6 +1796,8 @@ textarea {
     .program_box h2 { font-size: 3.5rem; }
     .about-blue-block, .about-blue-block::after { width: 240px; height: 220px }
     .blue-block-img { width: 165px; }
+    #search-li { position: absolute; bottom: -34px; width: auto; right: 30px; }
+    .my_navbar > li > a { padding: 12px 12px; }
 }
 
 @media all and (max-width: 767px) {
