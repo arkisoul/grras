@@ -1621,8 +1621,22 @@ textarea {
   #centers-map-box { height: 100%; min-height: 600px; width: 100%; }
   /* End of Centers Map Module */
 
-
 /* End of Our Company Page */
+
+/* Gallery page */
+
+  /* Header */
+  .gallery-header { background: url('../img/_our_company/banner.jpg') no-repeat center right scroll; background-size: cover; min-height: 600px; height: auto; display: flex; justify-content: flex-start; align-items: center; }
+  .gallery-header-highligh { color: #fff; }
+  /* End of Header */
+
+  /* Practical Labs Module */
+  #practical_labs { padding: 3rem 0; background-color: #fff; }
+  #practical_labs .row { display: flex; }
+  #practical_labs .col-sm-5 { align-self: center; }
+  .our-story-content-block { font-size: 1rem; color: #222; }
+  /* End of Practical Labs Module */
+/* End of Gallery page */
 
 
 /* ==========================================================================
@@ -1632,6 +1646,7 @@ textarea {
   .bg-v { background-color: rgb(7, 69, 177); }
   .bg-p { background-color: rgb(255, 45, 114); }
   .text-white { color: #fff; }
+  .text-white-50 { color: rgba(255, 255, 255, 0.5); }
   .text-blue { color: #00c6ff; }
   .text-p { color: rgb(255, 45, 114); }
   .mt-0 { margin-top: 0; }

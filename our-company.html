@@ -539,9 +539,9 @@
                   <ul class="footer_item">
                      <li> <a href="#"> About Us</a> </li>
                      <li> <a href="#"> News And Events</a> </li>
-                     <li> <a href="#"> Gallery</a> </li>
+                     <li> <a href="gallery.html"> Gallery</a> </li>
                      <li> <a href="#"> Blog</a> </li>
-                     <li> <a href="#"> Contact Us</a> </li>
+                     <li> <a href="contact.html"> Contact Us</a> </li>
                      <li> <a href="#"> Site Map</a> </li>
                   </ul>
                </div>
@@ -633,6 +633,8 @@
             center: {lat: 23.7761922, lng: 78.69209917}
           });
 
+          var infowindow = new google.maps.InfoWindow();
+
           // Create an array of alphabetical characters used to label the markers.
           var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
@@ -640,11 +642,17 @@
           // Note: The code uses the JavaScript Array.prototype.map() method to
           // create an array of markers based on a given "locations" array.
           // The map() method here has nothing to do with the Google Maps API.
+
           var markers = locations.map(function(location, i) {
-            return new google.maps.Marker({
+            var marker = new google.maps.Marker({
               position: location,
               label: labels[i % labels.length]
             });
+            google.maps.event.addListener(marker, 'click', function() {
+              infowindow.setContent(location.info);
+              infowindow.open(map, marker);
+            });
+            return marker;
           });
 
           // Add a marker clusterer to manage the markers.
@@ -652,14 +660,14 @@
               {imagePath: 'img/_google_markers/m'});
         }
         var locations = [
-          {lat: 26.9124336, lng: 75.7872709},
-          {lat: 22.7195687, lng: 75.8577258},
-          {lat: 18.5204303, lng: 73.8567437},
-          {lat: 21.1458004, lng: 79.0881546},
-          {lat: 19.9974533, lng: 73.7898023},
-          {lat: 23.022505, lng: 72.5713621},
-          {lat: 28.4594965, lng: 77.0266383},
-          {lat: 23.6036268, lng: 72.9639461}
+          {lat: 26.9124336, lng: 75.7872709, info: 'Marker Info'},
+          {lat: 22.7195687, lng: 75.8577258, info: 'Marker Info'},
+          {lat: 18.5204303, lng: 73.8567437, info: 'Marker Info'},
+          {lat: 21.1458004, lng: 79.0881546, info: 'Marker Info'},
+          {lat: 19.9974533, lng: 73.7898023, info: 'Marker Info'},
+          {lat: 23.022505, lng: 72.5713621, info: 'Marker Info'},
+          {lat: 28.4594965, lng: 77.0266383, info: 'Marker Info'},
+          {lat: 23.6036268, lng: 72.9639461, info: 'Marker Info'}
         ]
       </script>
 
