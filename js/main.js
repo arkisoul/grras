@@ -211,3 +211,33 @@ $(function(){
         resetCallback: function() {}
     });
 });
+
+function getRandom() {
+    return Math.floor((Math.random() * 7));
+}
+
+function setRandomBGOne() {
+    var randomNum = getRandom();
+    $('.world-learning-block .tile-wide:nth-child(1n + 0)').css('background-color', bgColors[randomNum]);
+}
+function setRandomBGTwo() {
+    var randomNum = getRandom();
+    $('.world-learning-block .tile-wide:nth-child(2n + 0)').css('background-color', bgColors[randomNum]);
+}
+function setRandomBGThree() {
+    var randomNum = getRandom();
+    $('.world-learning-block .tile-wide:nth-child(3n + 0)').css('background-color', bgColors[randomNum]);
+}
+function setRandomBGFour() {
+    var randomNum = getRandom();
+    $('.world-learning-block .tile-wide:nth-child(4n + 0)').css('background-color', bgColors[randomNum]);
+}
+
+$(function() {
+    var bgOneChild = setInterval(setRandomBGOne, 4000);
+    var bgTwoChild = setInterval(setRandomBGTwo, 4000);
+    var bgThrChild = setInterval(setRandomBGThree, 4000);
+    var bgFourChild = setInterval(setRandomBGFour, 4000);
+});
+
+var bgColors = ['#0050ef', '#702283', '#fa6800', '#4ECCA3', '#FF4057', '#962071', '#E95280', '#307672']

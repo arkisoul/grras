@@ -913,7 +913,7 @@ textarea {
 /* Navbar Search */
 #search {
   position: relative;
-  padding: 10px 0px;
+  padding: 0px;
 }
 
 #search::after {
@@ -1587,6 +1587,14 @@ textarea {
 
   /* What the world is learning now Module */
   #world_learning { padding: 2rem 0; background-color: rgb(248, 248, 248); }
+  .world-learning-block { margin-top: 2rem; }
+  .world-learning-block .tiles-grid { grid-gap: 0; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); grid-auto-rows: 60px; }
+  .world-learning-block .tiles-grid .tile-wide { grid-column: auto; grid-row: auto; width: auto; height:auto; }
+  .world-learning-block .tiles-grid h1 { margin: 0; font-size: 1.2rem; }
+  .world-learning-block .tile-wide { background-color: #0050ef; }
+  .world-learning-block .tile-wide:nth-child(2n + 0) { background-color: #702283; }
+  .world-learning-block .tile-wide:nth-child(3n + 0) { background-color: #fa6800; }
+  .world-learning-block .tile-wide:nth-child(4n + 0) { background-color: #4ECCA3; }
   /* End of What the world is learning now Module */
 
   /* Franchisee Module */
