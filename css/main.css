@@ -1614,6 +1614,9 @@ textarea {
   .program_box_wrapper { width: 25%; }
   .program_box_wrapper > .program_box { width: 100%; }
   #mission_vision .program_box { height: 400px; }
+  #mission_vision .program_box .img_thumb { position: relative; }
+  #mission_vision .program_box .img_thumb::after { content: ''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.4)}
+  #mission_vision .program_box .img_thumb .img-title { font-size: 1.2rem; z-index: 1; }
   /* End of Mission Vision Awards Value Module */
 
   /* Centers Map Module */
