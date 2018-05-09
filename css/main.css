@@ -977,10 +977,6 @@ textarea {
 }
 
 /* Course Detail Page */
-.module-heading {
-  font-size: 22px;
-  font-weight: 900;
-}
 .course-detail-header {
   background: url('../img/_inner_page/inner_banner.jpg') no-repeat center center scroll;
   background-size: cover;
@@ -1641,17 +1637,68 @@ textarea {
   /* End of Practical Labs Module */
 /* End of Gallery page */
 
+/* Reviews Ratings page */
+    /* Header */
+    .review-rating-header { background: url('../img/_review_ratings/banner.jpg') no-repeat center center scroll; background-size: cover; min-height: 600px; height: 100%; display: flex; justify-content: flex-start; align-items: flex-end; }
+    .review-header-highlight { padding-top: 10rem; }
+    .review-header-block { background-color: rgba(77, 91, 125, 0.6); }
+    .review-header-block .row.d-flex { display: flex; flex-flow: row wrap; }
+    .review-header-block .row.d-flex .align-self-center { align-self: center; }
+    .rate-icon-wrap > span { background-color: rgba(145, 200, 163, 1.0); border-radius: 50%; display: inline-flex; text-align: center; width: 90px; height: 90px; line-height: 1; margin-left: auto; margin-right: auto; }
+    .rate-icon-wrap > span > img { height: 60%; margin: auto; }
+    .rate-form-box .form-control, .rate-form-box .custom-select { background-color: rgba(255, 255, 255, 1.0); border: none; border-bottom: 1px solid #fff; border-radius: 0px; color: #222; }
+    .rate-form-box .form-control:focus { box-shadow: none; }
+    .form-fieldset { padding: 0.8rem; border: 1px solid #f5f5f5; border-radius: 8px; }
+    .rate-form-submit { margin-bottom: -2rem; }
+    .rate-form-submit .btn { padding: 0.5rem 2.4rem; border-radius: 0px; }
+    .rate-form-submit .btn:hover, .rate-form-submit .btn:focus, .rate-form-submit .btn:active { background-color: white; }
+    .rate-img-wrap { margin-top: -4rem; width: 100%; margin-right: 0; margin-left: auto; }
+    /* End of Header */
+
+    /* Recent Ratings Module */
+    #recent_ratings { padding: 2rem 0; }
+    .recent-rating-box { background-color: rgba(248, 248, 248, 1.0); padding: 1rem 1rem 1rem 0; }
+    .recent-rating-box + .recent-rating-box { margin-top: 1rem; }
+    .recent-rating-summary { position: relative; background: rgb(7, 69, 177); border-radius: 0em; }
+    .recent-rating-summary::after { content: ''; position: absolute; right: 0; top: 30%; width: 0; height: 0; border: 10px solid transparent; border-left-color: rgb(7, 69, 177); border-right: 0; margin-top: -10px; margin-right: -10px; }
+    .recent-rating-rating > span { font-size: 16px; }
+    .recent-rating-stars .fa-star-o { color: rgba(255, 255, 255, 0.6); font-size: 1rem; }
+    .recent-rating-stars .fa-star.ratedStar { color: rgba(255, 255, 255, 1.0); }
+    .recent-rating-title { margin-bottom: 0.1rem; font-size: 16px; }
+    .recent-rating-breakup-box + .recent-rating-breakup-box { margin-top: 0.5rem; }
+    .recent-rating-breakup-stars .fa-star { color: #ddd; }
+    .recent-rating-breakup-stars .fa-star.ratedStar { color: rgba(243, 218, 63, 1.0); }
+    .recent-rating-see-all { padding: 2rem 0 1rem; }
+    .recent-rating-see-all .btn { padding: 0.5rem 2.4rem; border-radius: 0; }
+    .recent-rating-see-all .btn:hover, .recent-rating-see-all .btn:focus, .recent-rating-see-all .btn:active { color: #fff; }
+    /* End of Recent Ratings Module */
+
+    /* FAQs Module */
+    #faqs { padding: 2rem 0; background-color: rgba(248, 248, 248, 1.0); }
+    .faqs-box { background-color: rgba(239, 239, 239, 1.0); padding: 1.5rem 1rem 1.5rem 2rem; position: relative; color: #333; border-radius: 4px; margin-bottom: 2rem; box-shadow: 0px 0px 12px 2px #bbb; }
+    .faqs-box > .faq-icon { position: absolute; display: inline-block; width: 30px; height: 30px; background-color: #000; color: #fff; text-align: center; margin: auto; line-height: 30px; left: -15px; top: 0; bottom: 0; border-radius: 50%; font-size: 1.4rem; }
+    .faq-title { font-size: 1.1rem; font-weight: 600; margin-top: 0; }
+    .faq-detail { font-size: 0.9rem; font-weight: normal; margin-bottom: 0; }
+    /* End FAQs Module */
+/* End of Reviews Ratings page */
+
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-  .module-subheading { width: 80%; margin-left: auto; margin-right: auto; }
+   .module-heading { font-size: 22px; font-weight: 900; letter-spacing: 0.8px; }
+  .module-subheading { width: 80%; margin-left: auto; margin-right: auto; letter-spacing: 0.6px; }
   .bg-v { background-color: rgb(7, 69, 177); }
   .bg-p { background-color: rgb(255, 45, 114); }
   .text-white { color: #fff; }
   .text-white-50 { color: rgba(255, 255, 255, 0.5); }
+  .text-white-75 { color: rgba(255, 255, 255, 0.75); }
   .text-blue { color: #00c6ff; }
   .text-p { color: rgb(255, 45, 114); }
+  .border-r { border-right: 2px solid rgba(224, 224, 224, 1.0); }
+  .m-auto { margin: auto; }
+  .my-auto { margin-top: auto; margin-bottom: auto; }
+  .mx-auto { margin-left: auto; margin-right: auto; }
   .mt-0 { margin-top: 0; }
   .mt-1 { margin-top: 0.5rem; }
   .mt-2 { margin-top: 1rem; }
@@ -1662,10 +1709,22 @@ textarea {
   .mb-2 { margin-bottom: 1rem; }
   .mb-3 { margin-bottom: 2rem; }
   .mb-4 { margin-bottom: 3rem; }
+  .p-0 { padding: 0; }
+  .p-1 { padding: 0.5rem; }
+  .p-2 { padding: 1rem; }
   .pl-0 { padding-left: 0; }
   .pr-0 { padding-right: 0; }
-  .px-0 { padding-top: 0; padding-bottom: 0; }
-  .py-0 { padding-right: 0; padding-left: 0; }
+  .px-0 { padding-right: 0; padding-left: 0; }
+  .px-1 { padding-right: 0.5rem; padding-left: 0.5rem; }
+  .px-2 { padding-right: 1rem; padding-left: 1rem; }
+  .px-3 { padding-right: 2rem; padding-left: 2rem; }
+  .py-0 { padding-top: 0; padding-bottom: 0; }
+  .py-1 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+  .py-2 { padding-top: 1rem; padding-bottom: 1rem; }
+  .w-25 { width: 25%; }
+  .w-50 { width: 50%; }
+  .w-75 { width: 75%; }
+  .w-100 { width: 100%; }
   span.req { color: red;}
   select:required:invalid { color: gray; }
   option[value=""][disabled] { display: none; }
@@ -1751,6 +1810,24 @@ textarea {
       transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
   }
   .impact-heading { display: inline-block; font-size: 3rem; font-weight: bold; font-family: 'Roboto', sans-serif; color: #e6e6e6; text-transform: uppercase; margin: 0; }
+  fieldset.input_rating, fieldset.input_rating label { margin: 0; padding: 0; }
+
+  /****** Style Star Rating Widget *****/
+  .input_rating { border: none; float: left; }
+  .input_rating > input { display: none; }
+  .input_rating > label::before { margin: 0.2rem 0.5rem; font-size: 1.6rem; font-family: FontAwesome; display: inline-block; content: "\f005"; }
+  .input_rating > .half::before { content: "\f089"; position: absolute; }
+  .input_rating > label { color: #ddd; float: right; }
+
+  /***** CSS Magic to Highlight Stars on Hover *****/
+  .input_rating > input:checked ~ label, /* show gold star when clicked */
+  .input_rating:not(:checked) > label:hover, /* hover current star */
+  .input_rating:not(:checked) > label:hover ~ label { color: #f8c53c;  } /* hover previous stars in list */
+
+  .input_rating > input:checked + label:hover, /* hover current star when changing rating */
+  .input_rating > input:checked ~ label:hover,
+  .input_rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+  .input_rating > input:checked ~ label:hover ~ label { color: #f8c53c;  }
 
 /*
  * Hide visually and from screen readers
@@ -1858,6 +1935,7 @@ textarea {
         width: 100%;
         margin: auto;
     }
+    .rate-img-wrap { width: 75%; }
 }
 
 @media all and (max-width: 1199px) and (min-width: 768px) {
@@ -2011,6 +2089,16 @@ textarea {
     #mission_vision .program_box.less_border_box { order: -1; width: 100%; align-self: baseline; max-width: 100%;}
     #mission_vision .impact-heading { font-size: 2rem; }
     .director-img { margin-bottom: 1.5rem; }
+    .review-header-block .row.d-flex { display: flex; flex-flow: column nowrap; }
+    .review-header-block .row.d-flex .align-self-center { align-self: auto; }
+    .rate-form-box { margin-top: 1rem; }
+    .rate-img-wrap { margin-top: 2rem; margin-left: auto; margin-right: auto; }
+    .rate-img-wrap > img { margin: auto; width: 60%; }
+    .recent-rating-summary { margin-bottom: 2rem; }
+    .recent-rating-summary::after { border-left-color: transparent; bottom: 0; border: 10px solid transparent; border-top-color: rgb(7, 69, 177); border-bottom: 0; margin-left: -10px; margin-bottom: -10px; margin-right: initial; margin-top: initial; top: initial; right: initial; }
+    .border-r { border-right: none; }
+    .recent-rating-breakup { display: flex; align-items: center; justify-content: space-between; width: 100%; margin-top: 2rem; }
+    .recent-rating-breakup-box + .recent-rating-breakup-box { margin-top: 0rem; }
 }
 
 @media all and (max-width: 480px) {
@@ -2026,6 +2114,7 @@ textarea {
   .header-box-content { flex-flow: column wrap; }
   .header-box-content .header-box-item { margin-left: 0; width: 100%; }
   .header-box-content .header-box-item + .header-box-item { margin-left: 0; margin-top: 1rem; }
+  .input_rating > label::before { margin: 0.2rem 0.4rem; }
 }
 
 /* ==========================================================================
