@@ -1641,11 +1641,13 @@ textarea {
     /* Header */
     .review-rating-header { background: url('../img/_review_ratings/banner.jpg') no-repeat center center scroll; background-size: cover; min-height: 600px; height: 100%; display: flex; justify-content: flex-start; align-items: flex-end; }
     .review-header-highlight { padding-top: 10rem; }
-    .review-header-block { background-color: rgba(77, 91, 125, 0.6); }
+    .review-header-block { background-color: rgba(77, 91, 125, 0.6); padding: 3rem 1rem 0; }
     .review-header-block .row.d-flex { display: flex; flex-flow: row wrap; }
     .review-header-block .row.d-flex .align-self-center { align-self: center; }
+    .review-header-block .row.d-flex .align-self-stretch { align-self: stretch; }
     .rate-icon-wrap > span { background-color: rgba(145, 200, 163, 1.0); border-radius: 50%; display: inline-flex; text-align: center; width: 90px; height: 90px; line-height: 1; margin-left: auto; margin-right: auto; }
     .rate-icon-wrap > span > img { height: 60%; margin: auto; }
+    .rate-form-box { margin-top: -4rem; }
     .rate-form-box .form-control, .rate-form-box .custom-select { background-color: rgba(255, 255, 255, 1.0); border: none; border-bottom: 1px solid #fff; border-radius: 0px; color: #222; }
     .rate-form-box .form-control:focus { box-shadow: none; }
     .form-fieldset { padding: 0.8rem; border: 1px solid #f5f5f5; border-radius: 8px; }
@@ -2089,8 +2091,10 @@ textarea {
     #mission_vision .program_box.less_border_box { order: -1; width: 100%; align-self: baseline; max-width: 100%;}
     #mission_vision .impact-heading { font-size: 2rem; }
     .director-img { margin-bottom: 1.5rem; }
+    .review-header-block { padding: 1rem; }
     .review-header-block .row.d-flex { display: flex; flex-flow: column nowrap; }
     .review-header-block .row.d-flex .align-self-center { align-self: auto; }
+    .review-header-block .row.d-flex .align-self-stretch { align-self: auto; }
     .rate-form-box { margin-top: 1rem; }
     .rate-img-wrap { margin-top: 2rem; margin-left: auto; margin-right: auto; }
     .rate-img-wrap > img { margin: auto; width: 60%; }
