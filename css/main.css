@@ -1221,7 +1221,7 @@ textarea {
   align-items: center;
   margin-bottom: 1rem;
 }
-.tab-content-banner-heading { font-size: 22px; font-weight: 900; margin: auto; position: absolute; color: #0C47AB; }
+.tab-content-banner-heading { font-size: 22px; font-weight: 900; margin: auto; position: absolute; color: #0745b1; }
 .tab-content-heading { font-size: 20px; font-weight: 600; }
 .tab-enrollment-form { background-color: rgba(252, 252, 252, 1.0); }
 .tab-enrollment-form form { border: 1px solid #dbdbdb; padding: 0.8rem 0; border-radius: 4px; margin: auto; }
@@ -1236,10 +1236,10 @@ textarea {
 .tab-content-card > h5 { font-size: 15px; }
 .tab-content-card > p { font-size: 12px; }
 #courseCertificate { max-height: 450px; overflow-y: auto; }
-#tab-content-accordion .panel-default { border-color: #0C47AB; }
-#tab-content-accordion .panel-default>.panel-heading { color: #fff; background-color: #0C47AB; border-color: #0C47AB; }
+#tab-content-accordion .panel-default { border-color: #0745b1; }
+#tab-content-accordion .panel-default>.panel-heading { color: #fff; background-color: #0745b1; border-color: #0745b1; }
 #tab-content-accordion .panel-default>.panel-heading+.panel-collapse>.panel-body {
-    border-color: #0C47AB;
+    border-color: #0745b1;
 }
 /* End of Course Detail: Course Overview */
 
