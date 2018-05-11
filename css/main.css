@@ -1221,11 +1221,25 @@ textarea {
   align-items: center;
   margin-bottom: 1rem;
 }
-.tab-content-heading {
-  font-size: 20px;
-  font-weight: 600;
-  margin: auto;
-  position: absolute;
+.tab-content-banner-heading { font-size: 22px; font-weight: 900; margin: auto; position: absolute; color: #0C47AB; }
+.tab-content-heading { font-size: 20px; font-weight: 600; }
+.tab-enrollment-form { background-color: rgba(252, 252, 252, 1.0); }
+.tab-enrollment-form form { border: 1px solid #dbdbdb; padding: 0.8rem 0; border-radius: 4px; margin: auto; }
+.tab-enrollment-form .form-group { margin-bottom: 8px; }
+.tab-enrollment-form .submit-btn-group { margin-bottom: -2rem; }
+.tab-content-list { display: flex; flex-flow: row wrap; align-items: center; justify-content: flex-start; }
+.tab-content-list-item { padding: 0.5rem 0.5rem 0.5rem 1rem; width: 50%; position: relative; }
+.tab-content-list-item::before { position: absolute; content: '\f101'; font: 1rem 'FontAwesome'; left: 0; top: 0; bottom: 0; margin: auto; height: 16px; }
+.tab-content-card { background-color: #fff; padding: 0.8rem; border-radius: 8px; box-shadow: 0 0 10px 2px #ddd; margin: 0.4rem; }
+.tab-content-card:hover, .tab-content-card:focus, .tab-content-card:active { box-shadow: 8px 0 10px -4px #aaa, -8px 0 8px -4px #aaa; -moz-box-shadow: 8px 0 10px -4px #aaa, -8px 0 8px -4px #aaa; -webkit-box-shadow: 8px 0 10px -4px #aaa, -8px 0 8px -4px #aaa; -o-box-shadow: 8px 0 10px -4px #aaa, -8px 0 8px -4px #aaa;
+}
+.tab-content-card > h5 { font-size: 15px; }
+.tab-content-card > p { font-size: 12px; }
+#courseCertificate { max-height: 450px; overflow-y: auto; }
+#tab-content-accordion .panel-default { border-color: #0C47AB; }
+#tab-content-accordion .panel-default>.panel-heading { color: #fff; background-color: #0C47AB; border-color: #0C47AB; }
+#tab-content-accordion .panel-default>.panel-heading+.panel-collapse>.panel-body {
+    border-color: #0C47AB;
 }
 /* End of Course Detail: Course Overview */
 
@@ -2174,16 +2188,17 @@ textarea {
   #search .dropdown-menu { right: 0; }
   #search:hover .dropdown-menu, #search.open .dropdown-menu { width: calc(100% - 32px); }
   #search:hover input, #search:focus input, #search:active input { background-color: #ececec; }
-}
-
-@media all and (max-width: 480px) {
-  .about-blue-block, .about-blue-block::after { width: 200px; height: 180px }
-  .blue-block-img { width: 165px; }
   .course-overview-block { flex-flow: column nowrap; }
   .course-overview-tabs-container { width: 100%; border-bottom-left-radius: 0; border-top-right-radius: 8px; }
   .course-overview-content-container { width: 100%; border-top-right-radius: 0px; border-bottom-left-radius: 8px;}
   #course-overview-tabs { display: flex; flex-flow: row wrap; justify-content: flex-start; }
   #course-overview-tabs.nav-stacked>li { width: 33%; }
+  .tab-content-list-item { width: 100%; }
+}
+
+@media all and (max-width: 480px) {
+  .about-blue-block, .about-blue-block::after { width: 200px; height: 180px }
+  .blue-block-img { width: 165px; }
   .candidate-review-box .media-left { display: block; margin-bottom: 1rem; }
   .training-centers-blocks-containers .filter { width: 100%; }
   .header-box-content { flex-flow: column wrap; }

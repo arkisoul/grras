@@ -73,6 +73,29 @@ $('#alumni-speaks-container').owlCarousel({
     }
 });
 
+$('#course-overview-job').owlCarousel({
+    loop:true,
+    dots:true,
+    nav:true,
+    autoplay:false,
+    margin: 5,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:2
+        },
+        992:{
+            items:2
+        },
+        1200:{
+            items:3
+        }
+    }
+});
+
 $('#related-courses-container').owlCarousel({
     loop:true,
     dots:true,
