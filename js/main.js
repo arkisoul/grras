@@ -150,7 +150,7 @@ AOS.init({
   delay: 100,
 });
 
-var swiper = new Swiper('.swiper-container', {
+var swiper_home = new Swiper('.our-story-gallery', {
     slidesPerView: 3,
     slidesPerColumn: 2,
     spaceBetween: -1,
@@ -172,6 +172,33 @@ var swiper = new Swiper('.swiper-container', {
       // when window width is <= 640px
       640: {
         slidesPerView: 2,
+      }
+    }
+});
+
+var swiper_gallery = new Swiper('.gallery-slider', {
+    slidesPerView: 2,
+    slidesPerColumn: 1,
+    slidesPerGroup: 1,
+    spaceBetween: -1,
+    loop: false,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is <= 320px
+      320: {
+        slidesPerView: 1,
+      },
+      // when window width is <= 480px
+      480: {
+        slidesPerView: 1,
+      },
+      // when window width is <= 768px
+      768: {
+        slidesPerView: 1,
       }
     }
 });
@@ -209,6 +236,31 @@ $(function(){
         onStringTyped: function() {},
         // callback for reset
         resetCallback: function() {}
+    });
+});
+
+$(function() {
+    var w = $(window).innerWidth();
+    if (w >= 991) {
+        $('ul.my_navbar > li.dropdown').hover(function(event) {
+            event.preventDefault();
+            $(this).find('.grras-dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+        }, function() {
+            $(this).find('.grras-dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+        });
+
+        $('ul.grras-dropdown-menu > li.dropdown').hover(function(event) {
+            event.preventDefault();
+            $(this).find('.grras-dropdown-inner-menu').stop(true, true).delay(200).fadeIn(500);
+        }, function() {
+            $(this).find('.grras-dropdown-inner-menu').stop(true, true).delay(200).fadeOut(500);
+        });
+    }
+
+    $('.dropdown-submenu > a').on('click', function(e){
+        $(this).next('ul').toggle();
+        e.stopPropagation();
+        e.preventDefault();
     });
 });
 
