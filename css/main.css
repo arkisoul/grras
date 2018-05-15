@@ -128,6 +128,7 @@ textarea {
     justify-content: space-between;
     align-items: center;
    }
+   .news_feed { width: 40%; }
 
    .news_feed h5 {
      font-size: 14px;
@@ -191,27 +192,42 @@ textarea {
      margin-top: 20px;
    }
 
+   .my_navbar > li { margin: 0.1rem; }
+
    .my_navbar > li > a {
      color: #fff;
      font-size: 16px;
-     transition: all ease-in-out 0.4s;
+     transition: all ease-in 0.4s;
+     padding: 0.6rem 0.8rem;
    }
 
    #search-li { padding-top: 10px; padding-bottom: 10px; }
    a.dropdown-toggle > img { width: 32px; height: 32px; }
 
    .my_navbar > li > a:hover, .my_navbar > li > a:focus, .my_navbar > li > a:active {
-    color: #dbdbdb;
-    background-color: transparent;
-    border-radius: 0;
+    color: #0745b1;
+    border: 1px solid #0745b1;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 25px;
     background-image: none;
+    padding: 0.6rem 0.8rem;
+   }
+   .my_navbar > li.active > a {
+    color: #0745b1;
+    border: 1px solid #0745b1;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 25px;
+    background-image: none;
+    padding: 0.6rem 0.8rem;
    }
 
    .my_navbar.nav .open>a, .my_navbar.nav .open>a:focus, .my_navbar.nav .open>a:hover {
-    color: #dbdbdb;
-    background-color: transparent;
-    border-radius: 0;
+    color: #0745b1;
+    border: 1px solid #0745b1;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 25px;
     background-image: none;
+    padding: 0.6rem 0.8rem;
    }
 
    .grras-dropdown-menu { min-width: 220px; padding: 0px; background-color: #fff; }
@@ -473,6 +489,8 @@ textarea {
      display: flex;
      justify-content: center;
    }
+
+   .course_box .c_thumb > img { height: 250px; }
 
    .course_para h1 {
      font-size: 20px;
@@ -1927,6 +1945,12 @@ textarea {
   .curved-bottom::after, .curved-top-bottom::after { position: relative; z-index: -2; }
   .curved-bottom::after { position: absolute; top: 50%; left: 12px; right: 12px; bottom: 0; box-shadow: 0 0px 10px 7px rgba(100,100,100,0.5); border-radius: 450px / 15px }
   .curved-top-bottom::after { position: absolute; top: 0; left: 12px; right: 12px; bottom: 0; box-shadow: 0 0px 10px 7px rgba(100,100,100,0.5); border-radius: 450px / 15px; }
+
+  /* Marquee Using CSS Animations */
+  .marquee { width: 50%; white-space: nowrap; overflow: hidden; box-sizing: border-box; }
+  .marquee .marquee-item { display: inline-block; padding-left: 100%; animation: marquee 40s linear infinite; }
+  .marquee .marquee-item:hover, .marquee .marquee-item:focus { cursor: pointer; animation-duration: 1000s; }
+  @keyframes marquee { 0% { transform: translate(0, 0); } 100% { transform: translate(-100%, 0); } }
 
 /*
  * Hide visually and from screen readers
