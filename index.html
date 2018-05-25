@@ -152,11 +152,47 @@
         <div class="carousel-inner" role="listbox">
           <div class="item active">
             <div class="carousel-caption">
-              <div class="container custom-container">
-                <div class="slider_content">
-                  <h1> Delivering Succsess <br /> Through Knowledge & Information </h1>
-                  <p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, <br /> by injected humour, or randomised words which don't look even  randomised words which don't look even  </p>
-                  <button type="button"> Register Now</button>
+              <div class="container container-fluid">
+                <div class="slider_content slider_content_bg">
+                  <img src="img/_banners/trophy.png" alt="Trophy/Awards" class="banner_trophy" />
+                  <h1 class="slider_content_title">Meet the awarded and authorized <span class="text-yellow">Redhat Training</span> partner</h1>
+                  <h2 class="slider_content_subtitle">Choose your bundle of courses and get <span class="text-green">flat 50%</span> on certification.</h2>
+                  <div class="banner-table">
+                    <div class="table-responsive">
+                      <table class="table table-bordered text-center">
+                        <tbody>
+                          <tr>
+                            <td>Bundle 1</td>
+                            <td>Bundle 2</td>
+                            <td>Bundle 3</td>
+                            <td>Bundle 4</td>
+                            <td>Bundle 5</td>
+                          </tr>
+                          <tr>
+                            <td>RHSCA</td>
+                            <td>Python</td>
+                            <td>AWS</td>
+                            <td>RHSCA</td>
+                            <td>Python</td>
+                          </tr>
+                          <tr>
+                            <td>RHCE</td>
+                            <td>Machine Learning</td>
+                            <td>Dev-Ops</td>
+                            <td>RHCE</td>
+                            <td>Machine Learning</td>
+                          </tr>
+                          <tr>
+                            <td>CL210</td>
+                            <td>Big Data</td>
+                            <td>Open Stack</td>
+                            <td>CL210</td>
+                            <td>Big Data</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -703,6 +739,9 @@
     <script src="js/vendor/wow.min.js"></script>
     <script>
       new WOW().init();
+      $('.carousel').carousel({
+        interval: 100000
+      })
     </script>
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>

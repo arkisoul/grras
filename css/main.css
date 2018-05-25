@@ -245,30 +245,30 @@ textarea {
    .grras-dropdown-inner-menu > li > a:hover::after, .grras-dropdown-inner-menu > li > a:focus::after, .grras-dropdown-inner-menu > li > a:active::after { background-color: #00a8ff; color: #fff; right: 5px; }
 
    #home_slider .carousel-inner .item:first-child {
-    background: url('../img/_banners/banner01.jpg') no-repeat center center scroll;
+    background: url('../img/_banners/banner_01.jpg') no-repeat center center scroll;
     background-size: cover;
-    min-height: 380px;
+    min-height: 600px;
     height: auto;
    }
 
    #home_slider .carousel-inner .item:nth-child(2) {
     background: url('../img/_banners/banner02.jpg') no-repeat center center scroll;
     background-size: cover;
-    min-height: 380px;
+    min-height: 600px;
     height: auto;
    }
 
    #home_slider .carousel-inner .item:nth-child(3) {
     background: url('../img/_banners/banner03.jpg') no-repeat center center scroll;
     background-size: cover;
-    min-height: 380px;
+    min-height: 600px;
     height: auto;
    }
 
    #home_slider .carousel-inner .item:last-child {
     background: url('../img/_banners/banner04.jpg') no-repeat center center scroll;
     background-size: cover;
-    min-height: 380px;
+    min-height: 600px;
     height: auto;
    }
 
@@ -308,11 +308,50 @@ textarea {
     left: 0;
     right: 0;
     margin: auto;
+    line-height: 40px;
    }
 
    .slider_content {
      background: rgba( 0, 0, 0, 0.0)
    }
+
+  .slider_content.slider_content_bg {
+    background-color: rgba(22, 71, 1, 0.3);
+    width: 55%;
+    position: relative;
+  }
+
+  .banner_trophy {
+    position: absolute;
+    top: -15px;
+    right: -50px;
+    width: 95px;
+  }
+
+  .slider_content_bg > .slider_content_title {
+    background-color: rgba(22, 71, 1, 0.3);
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0.5em;
+    color: #fff;
+  }
+
+  .banner-table {
+    padding: 0.5em;
+    background-color: rgba(22, 71, 1, 0.3);
+  }
+
+  .banner-table .table {
+    margin: 0;
+  }
+
+  .slider_content_bg > .slider_content_subtitle {
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 1.25em;
+    margin: 0;
+    padding: 0.5em;
+    color: #fff;
+  }
 
    .slider_content h1 {
      font-size: 2rem;
@@ -449,6 +488,8 @@ textarea {
      flex-flow: row wrap;
    }
 
+   .coureses_bg .d-flex > div { margin-bottom: 1.25rem; }
+
    .coureses_bg .courese_detail {
      width: 100%;
      height: auto
@@ -471,11 +512,15 @@ textarea {
 
    .course_box {
      width: 100%;
-     height: auto;
+     height: 100%;
      position: relative;
      background: #FFF;
-     margin-bottom: 30px;
-     transition: all 1s
+     transition: all 1s;
+   }
+
+   .course_box {
+    display: flex;
+    flex-direction: column;
    }
 
    .course_box:hover {
@@ -485,7 +530,7 @@ textarea {
 
    .course_box .c_thumb {
      width: 100%;
-     height: 50%;
+     height: auto;
      display: flex;
      justify-content: center;
    }
@@ -512,7 +557,9 @@ textarea {
      width: 100%;
      height: 60px;
      background: #ff005f;
-     cursor: pointer
+     cursor: pointer;
+     margin-top: auto;
+     margin-bottom: 0;
    }
 
    .large_btn button {
@@ -1804,6 +1851,8 @@ textarea {
   .text-white-50 { color: rgba(255, 255, 255, 0.5); }
   .text-white-75 { color: rgba(255, 255, 255, 0.75); }
   .text-blue { color: #00c6ff; }
+  .text-yellow { color: #fdec00; }
+  .text-green { color: #28fe00; }
   .text-p { color: rgb(255, 45, 114); }
   .border-r { border-right: 2px solid rgba(224, 224, 224, 1.0); }
   .m-auto { margin: auto; }
@@ -2073,6 +2122,10 @@ textarea {
   .owl-carousel .owl-item .video-testimonial-img img { width: 100%; }
   .enquiry-form-block .col-sm-12 + .col-sm-12 { margin-top: 7rem; }
   .our-company-header .our-company-header-highlight { width: 90%; margin-left: auto; }
+  .slider_content.slider_content_bg { width: 75%; }
+  .banner_trophy { width: 80px; right: -40px; }
+  .slider_content_bg > .slider_content_title { font-size: 1.25em; }
+  .slider_content_bg > .slider_content_subtitle { font-size: 1em; }
 }
 
 @media all and (max-width: 991px) and (min-width: 768px) {
@@ -2115,6 +2168,7 @@ textarea {
     position: absolute;
     width: 100%;
     z-index: 111;
+    max-height: initial;
   }
   .my_navbar {
     width: 100%;
@@ -2218,6 +2272,11 @@ textarea {
   #course-overview-tabs { display: flex; flex-flow: row wrap; justify-content: flex-start; }
   #course-overview-tabs.nav-stacked>li { width: 33%; }
   .tab-content-list-item { width: 100%; }
+  .slider_content.slider_content_bg { width: 100%; }
+  .banner_trophy { width: 80px; right: -40px; }
+  .banner-table .table-responsive { margin-bottom: 0; }
+  .slider_content_bg > .slider_content_title { font-size: 1.25em; }
+  .slider_content_bg > .slider_content_subtitle { font-size: 1em; }
 }
 
 @media all and (max-width: 480px) {
