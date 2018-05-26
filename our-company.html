@@ -148,7 +148,7 @@
       </section>
       <!-- End of Main Navigation -->
       <!-- Header Box -->
-      <div class="container-fluid our-company-header-highlight">
+      <div class="container-fluid our-company-header-highlight hidden-xs">
         <div class="header-box">
           <h1 class="mt-0 mb-1">Our Company</h1>
           <p class="mb-2">GRRAS has 8 established training centers and hands on air conditioned practice labs across India to welcome you.</p>
@@ -171,6 +171,28 @@
       <!-- End of Header Box -->
     </header>
     <!-- End of header -->
+    <!-- Header Box -->
+    <div class="container-fluid our-company-header-highlight hidden-sm hidden-md hidden-lg">
+      <div class="header-box">
+        <h1 class="mt-0 mb-1">Our Company</h1>
+        <p class="mb-2">GRRAS has 8 established training centers and hands on air conditioned practice labs across India to welcome you.</p>
+        <div class="header-box-content">
+          <div class="header-box-item">
+            <div class="header-box-item-counts">2500+</div>
+            <div class="header-box-item-text">Dedicated Trainers</div>
+          </div>
+          <div class="header-box-item">
+            <div class="header-box-item-counts">1500+</div>
+            <div class="header-box-item-text">Training Courses</div>
+          </div>
+          <div class="header-box-item">
+            <div class="header-box-item-counts">1000+</div>
+            <div class="header-box-item-text">Training Partners</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Header Box -->
     <!-- Our Story Module -->
     <section id="our_company_story" data-aos="zoom-in-down">
       <div class="container custom-container">
@@ -728,17 +750,17 @@
     <section id="get_franchisee" data-aos="zoom-in-down">
       <div class="container custom-container">
         <div class="row">
-          <div class="col-sm-7">
+          <div class="col-sm-5 col-sm-push-7">
+            <div class="franchisee-head-block text-center">
+              <h1 class="impact-heading text-uppercase">get franchisee<br>by grass</h1>
+            </div>
+          </div>
+          <div class="col-sm-7 col-sm-pull-5">
             <div class="franchisee-content-block">
               Good itself gathering, his fruitful bring under in under she'd yielding. Sea replenish under for seasons place may created dry form image fifth very, made fruitful male first of you rule gathering Male two divide, all was bring so. Darkness appear saying, open whose stars which earth brought. Hath dominion under brought Make place, years all grass moving female fowl.
             </div>
             <div class="apply-now-btn text-center mt-3">
               <button class="text-uppercase bg-p text-white btn">Apply Now</button>
-            </div>
-          </div>
-          <div class="col-sm-5">
-            <div class="franchisee-head-block text-center">
-              <h1 class="impact-heading text-uppercase">get franchisee<br>by grass</h1>
             </div>
           </div>
         </div>
@@ -922,8 +944,15 @@
     </script>
     <script>
       function initMap() {
+        var deviceWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+        if (deviceWidth <= 768) {
+          var zoomLevel = 5;
+        } else {
+          var zoomLevel = 6;
+        }
+
         var map = new google.maps.Map(document.getElementById('centers-map-box'), {
-          zoom: 6,
+          zoom: zoomLevel,
           center: {lat: 23.7761922, lng: 78.69209917}
         });
 
