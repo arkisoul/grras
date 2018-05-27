@@ -2127,7 +2127,7 @@ textarea {
   .owl-carousel .owl-item .our-trainer-avatar img { margin: auto; }
   .owl-carousel .owl-item .video-testimonial-img img { width: 100%; }
   .enquiry-form-block .col-sm-12 + .col-sm-12 { margin-top: 7rem; }
-  .our-company-header-highlight { width: 90%; margin-left: auto; }
+  .our-company-header-highlight.container-fluid { width: 90%; margin-left: auto; }
   .slider_content.slider_content_bg { width: 75%; }
   .banner_trophy { width: 80px; right: -40px; }
   .slider_content_bg > .slider_content_title { font-size: 1.25em; }
@@ -2291,7 +2291,7 @@ textarea {
   .slider_content_bg > .slider_content_title { font-size: 1.25em; }
   .slider_content_bg > .slider_content_subtitle { font-size: 1em; }
   .our-company-header { min-height: 320px; }
-  .our-company-header-highlight { padding: 0.75rem; background: rgba(0, 0, 0, 0.9); margin-top: -2rem; }
+  .our-company-header-highlight.container-fluid { padding: 0.75rem; background: rgba(0, 0, 0, 0.9); margin-top: -2rem; border-radius: 8px; box-shadow: 0 2px 4px 0px #000; }
   .header-box > h1 { font-size: 1em; }
   .header-box > p { font-size: 0.75em; }
   .header-box-item .header-box-item-counts { font-size: 1.2em; padding: 0.25rem; }
