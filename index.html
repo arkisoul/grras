@@ -19,6 +19,56 @@
     <link rel="stylesheet" href="css/swiper.min.css" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css" />
+    <style>
+      #home_slider .carousel-inner .item:first-child {
+        background: url('img/_banners/banner02A.jpg') no-repeat center center scroll / cover;
+          background-size: cover;
+          min-height: 500px;
+          height: auto;
+      }
+
+      #home_slider .carousel-inner .item:nth-child(2) {
+        background: url('img/_banners/banner003.jpg') no-repeat center center scroll / cover;
+          background-size: cover;
+          min-height: 500px;
+          height: auto;
+      }
+
+      #home_slider .carousel-inner .item:nth-child(3) {
+        background: url('img/_banners/banner06.jpg') no-repeat center center scroll / cover;
+          background-size: cover;
+          min-height: 500px;
+          height: auto;
+      }
+
+      #home_slider .carousel-inner .item:last-child {
+        background: url('img/_banners/banner07.jpg') no-repeat center center scroll / cover;
+          background-size: cover;
+          min-height: 500px;
+          height: auto;
+      }
+      @media screen and (max-width: 767px) {
+        #home_slider .carousel-inner .item:first-child {
+          background: url('img/_banners/banner02A_mobile.jpg') no-repeat center center scroll / cover;
+          height: 320px;
+        }
+
+        #home_slider .carousel-inner .item:nth-child(2) {
+          background: url('img/_banners/banner003_mobile.jpg') no-repeat center center scroll / cover;
+          height: 320px;
+        }
+
+        #home_slider .carousel-inner .item:nth-child(3) {
+          background: url('img/_banners/banner06_mobile.jpg') no-repeat center center scroll / cover;
+          height: 320px;
+        }
+
+        #home_slider .carousel-inner .item:last-child {
+          background: url('img/_banners/banner07_mobile.jpg') no-repeat center center scroll / cover;
+          height: 320px;
+        }
+      }
+    </style>
   </head>
   <body>
     <!--[if lte IE 9]>
@@ -151,7 +201,7 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
           <div class="item active">
-            <div class="carousel-caption">
+            <!-- <div class="carousel-caption">
               <div class="container container-fluid">
                 <div class="slider_content slider_content_bg">
                   <img src="img/_banners/trophy.png" alt="Trophy/Awards" class="banner_trophy" />
@@ -195,10 +245,10 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="item">
-            <div class="carousel-caption">
+            <!-- <div class="carousel-caption">
               <div class="container custom-container">
                 <div class="slider_content">
                   <h1> Delivering Succsess <br /> Through Knowledge & Information </h1>
@@ -206,10 +256,10 @@
                   <button type="button"> Register Now</button>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="item">
-            <div class="carousel-caption">
+            <!-- <div class="carousel-caption">
               <div class="container custom-container">
                 <div class="slider_content">
                   <h1> Delivering Succsess <br /> Through Knowledge & Information </h1>
@@ -217,10 +267,10 @@
                   <button type="button"> Register Now</button>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="item">
-            <div class="carousel-caption">
+            <!-- <div class="carousel-caption">
               <div class="container custom-container">
                 <div class="slider_content">
                   <h1> Delivering Succsess <br /> Through Knowledge & Information </h1>
@@ -228,7 +278,7 @@
                   <button type="button"> Register Now</button>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
         <!-- Controls -->
@@ -739,9 +789,9 @@
     <script src="js/vendor/wow.min.js"></script>
     <script>
       new WOW().init();
-      /*$('.carousel').carousel({
+      $('.carousel').carousel({
         interval: 100000
-      })*/
+      })
     </script>
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>

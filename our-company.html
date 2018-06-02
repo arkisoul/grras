@@ -810,17 +810,14 @@
               <p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even</p>
             </div>
           </div>
-          <div class="program_box_wrapper text-center custom-my" data-aos="fade-up">
-            <div class="program_box">
-              <div class="img_thumb">
-                <img src="img/_our_company/value.png" class="img-responsive" />
-                <div class="img-title">Values</div>
-              </div>
-              <div class="pro_content text-center mt-2">
-                <p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even</p>
-              </div>
+          <div class="program_box">
+            <div class="img_thumb">
+              <img src="img/_our_company/value.png" class="img-responsive" />
+              <div class="img-title">Values</div>
             </div>
-            <h1 class="impact-heading text-uppercase">Values</h1>
+            <div class="pro_content text-center mt-2">
+              <p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even</p>
+            </div>
           </div>
         </div>
       </div>
@@ -945,15 +942,10 @@
     <script>
       function initMap() {
         var deviceWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-        if (deviceWidth <= 768) {
-          var zoomLevel = 5;
-        } else {
-          var zoomLevel = 6;
-        }
 
         var map = new google.maps.Map(document.getElementById('centers-map-box'), {
-          zoom: zoomLevel,
-          center: {lat: 23.7761922, lng: 78.69209917}
+          zoom: 6,
+          center: {lat: 23.5992, lng: 76.47015}
         });
 
         var infowindow = new google.maps.InfoWindow();
