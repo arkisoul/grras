@@ -190,6 +190,10 @@ var swiper_home = new Swiper('.our-story-gallery', {
     slidesPerColumn: 2,
     spaceBetween: -1,
     loop: false,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+    },
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
