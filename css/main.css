@@ -603,7 +603,7 @@ a.dropdown-toggle>img {
 }
 
 .coureses_bg {
-    background: url('../img/_home_page/background_image_top_courses.png');
+    background: url('../img/_home_page/background_image_top_courses.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -612,7 +612,7 @@ a.dropdown-toggle>img {
 .coureses_bg .pink_bg {
     width: 100%;
     height: auto;
-    background: rgba(255, 0, 95, 0.6);
+    /* background: rgba(255, 0, 95, 0.6); */
     margin: 0px;
     padding: 5rem 0 4rem;
 }
