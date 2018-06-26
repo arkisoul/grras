@@ -298,6 +298,25 @@ $(function () {
         e.stopPropagation();
         e.preventDefault();
     });
+
+    $('body').on('click', '#course-overview-tabs > li > a', function(event) {
+        event.preventDefault();
+        /* Act on the event */
+        var pos = $('.course-overview-content-container').offset().top;
+        console.log(pos);
+        $('body, html').animate({
+            scrollTop: pos
+        }, 1000);
+    });
+
+    $('body').on('click', '.training-centers-tabs-container > button', function(event) {
+        event.preventDefault();
+        /* Act on the event */
+        var pos = $('.training-centers-blocks-containers').offset().top;
+        $('body, html').animate({
+            scrollTop: pos
+        }, 1000);
+    });
 });
 
 function getRandom() {
